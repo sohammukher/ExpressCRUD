@@ -1,0 +1,39 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Express BackEND",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js --exec babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sohammukher/ExpressCrudBackEnd.git"
+  },
+  "keywords": [
+    "Express",
+    "react",
+    "frontend",
+    "backend",
+    "javascript",
+    "node.js"
+  ],
+  "author": "Soham Mukherjee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sohammukher/ExpressCrudBackEnd/issues"
+  },
+  "homepage": "https://github.com/sohammukher/ExpressCrudBackEnd#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.1.2",
+    "nodemon": "^3.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "babel": "^6.23.0"
+  }
+}
