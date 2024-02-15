@@ -1,10 +1,15 @@
 import express from 'express';
-
+import routes from "./src/routes/crmRoutes"
 
 // Run Express
  const app = express();
-// Define Port
-const PORT = 3000;
+
+// Run our routes:
+routes(app);
+
+
+ // Define Port
+const PORT = 3001;
 
  app.get('/', (req,res)=>{
  
