@@ -2,9 +2,20 @@ const routes = (app) =>{
 
     // http://localhost:3001/contact
     app.route("/contact")
-    .get((req,res)=>
-    res.send("Post Successful")
+    .get((req,res,next)=>{
+
+    // MiddleWare
+    console.log("Req "+req);
+   
+
+    next();
+    }, (req, res, next) =>{
+        res.send("Post Successful")
+
+    }
     )
+
+    
 
     .post((req,res)=>
     res.send("Post Successful")
